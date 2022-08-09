@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.PestsDis">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#90EE90">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition  Height="120"/>
+                    <RowDefinition  Height="120"/>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition  Height="120"/>
+                    <RowDefinition  Height="120"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="#F0FFF0"  >
+                    <Label Text="Diseases" Margin="-25" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0,10" TextColor="Black">
+                    </Label>
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="2" Grid.RowSpan="2" BackgroundColor="White" Margin="10" CornerRadius="5" Padding="50">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical">
+                        <Image Source="leafspot.jpg" Aspect="AspectFit" Margin="-50">
+                        </Image>
+                        <Label Text="Leaf Spot" Padding="0,80" Margin="-32" FontSize="Medium" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="End">
+                        </Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="2" Grid.RowSpan="2" BackgroundColor="White" Margin="10" CornerRadius="5" Padding="50">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical">
+                        <Image Source="leafrust.jpg" Aspect="AspectFit" Margin="-50">
+                        </Image>
+                        <Label Text="Leaf Rust" Padding="0,80" Margin="-32" FontSize="Medium" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="End">
+                        </Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" BackgroundColor="#F0FFF0"  >
+                    <Label Text="Pests" Margin="-25" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" Padding="0,10" TextColor="Black">
+                    </Label>
+                </Frame>
+
+                <Frame Grid.Column="0" Grid.Row="7" Grid.RowSpan="2" BackgroundColor="White" Margin="10" CornerRadius="5" Padding="50">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical">
+                        <Image Source="thrips.jpg" Aspect="AspectFit" Margin="-50">
+                        </Image>
+                        <Label Text="Thrips" Padding="0,80" Margin="-32" FontSize="Medium" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="End">
+                        </Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="7" Grid.RowSpan="2" BackgroundColor="white" Margin="10" CornerRadius="5" Padding="50">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" />
+                    </Frame.GestureRecognizers>
+                    <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical">
+                        <Image Source="beanaphid.jpg" Aspect="AspectFit" Margin="-50">
+                        </Image>
+                        <Label Text="Bean Aphid" Padding="0,80" Margin="-32" FontSize="Medium" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="End">
+                        </Label>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

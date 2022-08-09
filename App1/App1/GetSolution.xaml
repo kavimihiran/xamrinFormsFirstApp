@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1;assembly=App1"
+             x:Class="App1.GetSolution">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#90EE90">
+            <StackLayout VerticalOptions="Start" Orientation="Vertical" Padding="0,70">
+                <Image Source="cropvariety.png" Aspect="AspectFit" HeightRequest="80"  WidthRequest="130" >
+                </Image>
+                <Label Text="Select a Crop Variety" Padding="0,20"   FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black">
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="0,0,0,220">
+                <local:RoundedPicker Title="Select a Crop Variety" BackgroundColor="#F0FFF0" HorizontalTextAlignment="Center" FontSize="Medium" >
+                    <Picker.Items>
+                        <x:String>Rice</x:String>
+                        <x:String>Maize</x:String>
+                        <x:String>ChickPie</x:String>
+                        <x:String>Kidney Beans</x:String>
+                        <x:String>Moth Beans</x:String>
+                        <x:String>Lentil</x:String>
+                        <x:String>Banana</x:String>
+                        <x:String>Mango</x:String>
+                        <x:String>Grapes</x:String>
+                    </Picker.Items>
+                </local:RoundedPicker>
+            </StackLayout>
+            <Button Text="Submit" x:Name="Btn"
+                    FontSize="Medium"
+                    TextTransform="None"
+                    HeightRequest="40"
+                    WidthRequest="230"
+                    TextColor="White"
+                    CornerRadius="30"
+                    VerticalOptions="End"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    Clicked="Btn_Clicked"
+                    
+                   ></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

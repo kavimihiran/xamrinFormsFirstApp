@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"         
+             xmlns:local="clr-namespace:App1;assembly=App1"
+             x:Class="App1.MainPage"
+            >
+  
+    <StackLayout Orientation="Vertical" Padding="0,0,0,100">
+        <Frame BackgroundColor="#228B22" HeightRequest="80" Padding="0,60,0,0">
+            
+        </Frame>
+        
+        <Image Source="{local:ImageResourseExntension App1.NewFolder3.logo.png}"             
+               Margin="30"
+               VerticalOptions="CenterAndExpand"
+               Aspect="AspectFill">
+        </Image>
+        <StackLayout Orientation="Vertical" Padding="0,20,0,80">
+            
+            <StackLayout Padding="0,0,0,-40">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="100" >
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your email" x:Name="NameTextBox"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start" FontFamily="Times New Roman"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0,0,0,70">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="100">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_password-512.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your password" MaxLength="6" IsPassword="True"  x:Name="PasswordTextBox"  TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="Login" x:Name="Btn"
+                    
+                    FontSize="Medium"
+                    HeightRequest="50"
+                    WidthRequest="320"
+                    TextColor="White"
+                    CornerRadius="30"
+                    BackgroundColor="#228B22"
+                    HorizontalOptions="Center"
+                    Clicked="Btn_Clicked"></Button>
+            <Label
+                Padding="20"
+                HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Don't have an account ?  " 
+                              FontSize="Small"
+                              FontFamily="Times New Roman"/>
+                        <Span Text="SIGN UP"
+                               TextColor="Blue"
+                              FontFamily="Times New Roman"
+                              FontAttributes="Bold"
+                               TextDecorations="None"
+                              >
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTappedRec"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                        
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </StackLayout>
+    
+    
+    
+    </StackLayout>
+
+
+</ContentPage>

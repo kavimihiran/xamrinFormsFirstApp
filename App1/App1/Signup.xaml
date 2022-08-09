@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.Signup">
+    <ContentPage.Resources>
+
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="0,20,0,80">
+
+            <StackLayout Padding="0,40,0,-40">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50" >
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="25" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/user.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your first name" x:Name="EntryFirstName" TextColor="#696969" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start" FontFamily="Times New Roman"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0,0,0,-40">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/user.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your last name" x:Name="EntryLastName" TextColor="	#696969" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0,0,0,-40">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your email" x:Name="EntryEmail" TextColor="	#696969" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0,0,0,-40">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_password-512.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Enter your password" MaxLength="6" IsPassword="True" x:Name="EntryPassword" TextColor="#696969" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0,0,0,50">
+                <Frame BackgroundColor="#32CD32" BorderColor="DarkGray" Padding="0" Margin="30" CornerRadius="50" HorizontalOptions="FillAndExpand" HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Frame BackgroundColor="AliceBlue" CornerRadius="50" HeightRequest="20" WidthRequest="35" Padding="0" Margin="7,7,0,7">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_password-512.png" Aspect="AspectFill" Margin="5"/>
+                        </Frame>
+                        <local:RoundedEntry Placeholder="Confirm password" MaxLength="6" IsPassword="True" TextColor="	#696969" HorizontalOptions="FillAndExpand" Margin="0,5,15,0" HorizontalTextAlignment="Start"></local:RoundedEntry>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="SIGN UP" x:Name="Btn"
+                    FontSize="Medium"
+                    HeightRequest="50"
+                    WidthRequest="340"
+                    TextColor="White"
+                    CornerRadius="30"
+                    BackgroundColor="#228B22"
+                    HorizontalOptions="Center"
+                    Clicked="Btn_Clicked"
+                   ></Button>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

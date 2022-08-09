@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1;assembly=App1"
+             x:Class="App1.SelectLocationScreen">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#90EE90">
+            
+            <StackLayout VerticalOptions="Start" Orientation="Vertical" Padding="0,70">
+                <Image Source="location2.png" Aspect="AspectFit" HeightRequest="80"  WidthRequest="130" >
+                </Image>
+                <Label Text="Select Your Location" Padding="0,20"   FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black">
+                </Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Start">
+                <local:RoundedPicker Title="Select a Province" BackgroundColor="#F0FFF0" HorizontalTextAlignment="Center" FontSize="Medium" >
+                    <Picker.Items>
+                        <x:String>Central </x:String>
+                        <x:String>Eastern </x:String>
+                        <x:String>Nothern </x:String>
+                        <x:String>Southern </x:String>
+                        <x:String>Western </x:String>
+                        <x:String>North Western </x:String>
+                        <x:String>North Central </x:String>
+                        <x:String>Uva </x:String>
+                        <x:String>Sabaragamu </x:String>
+                    </Picker.Items>
+                </local:RoundedPicker>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="0,30">
+                <local:RoundedPicker Title="Select a District" BackgroundColor="#F0FFF0" HorizontalTextAlignment="Center" FontSize="Medium" >
+                    <Picker.Items>
+                        <x:String>Kegalle</x:String>
+                        <x:String>Rathnapura</x:String>
+                    </Picker.Items>
+                </local:RoundedPicker>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="0,0,0,40">
+                <local:RoundedPicker Title="Select a City" BackgroundColor="#F0FFF0" HorizontalTextAlignment="Center" FontSize="Medium" >
+                    <Picker.Items>
+                        <x:String>Rathnapura</x:String>
+                        <x:String>Balangoda</x:String>
+                    </Picker.Items>
+                </local:RoundedPicker>
+            </StackLayout>
+
+            <Button Text="Submit" x:Name="Btn"
+                    FontSize="Medium"
+                    TextTransform="None"
+                    HeightRequest="40"
+                    WidthRequest="230"
+                    TextColor="White"
+                    CornerRadius="30"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Center"
+                    Clicked="Btn_Clicked"
+                   ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

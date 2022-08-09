@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.RecommendedCrops"
+             >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#90EE90">
+            <StackLayout VerticalOptions="Start" Orientation="Vertical" Padding="0,70">
+                <Image Source="crop2.png" Aspect="AspectFit" HeightRequest="80"  WidthRequest="130" >
+                </Image>
+                <Label Text="Recommended Crops" Padding="0,20"   FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="Black">
+                </Label>
+            </StackLayout>
+            <Frame BackgroundColor="White">
+                <Label Text="Most Suitable" HorizontalTextAlignment="Center" FontSize="Large" FontAttributes="Bold" FontFamily="Time New Roman" TextColor="Black"></Label>
+            </Frame>
+
+            <Frame  BackgroundColor="White" Margin="80" CornerRadius="0" Padding="20,-20" HeightRequest="440">
+                <StackLayout VerticalOptions="StartAndExpand" Orientation="Vertical">
+                    <Image Source="coconut.png" Aspect="AspectFit" Margin="-20">
+                    </Image>
+                    <Label Text="Coconut" Padding="10,20" Margin="5" FontSize="Large" HorizontalTextAlignment="Center" FontAttributes="Bold" VerticalTextAlignment="End">
+                    </Label>
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
