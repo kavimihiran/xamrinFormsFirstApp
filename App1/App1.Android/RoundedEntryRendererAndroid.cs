@@ -18,7 +18,7 @@ namespace App1.Droid
 
             if (e.OldElement == null)
             {
-                Control.SetBackgroundColor(Android.Graphics.Color.Transparent);
+                Control.SetBackgroundColor(global::Android.Graphics.Color.Transparent);
 
             }
         }
